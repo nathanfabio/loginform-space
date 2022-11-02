@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../imagens/pexels-janik-butz-5366526.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    color: rgb(2, 2, 85);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    background-color: rgba(43, 43, 139, 0.452);
+    border-radius: 10px;
+    height: 25rem;
+    width: 20rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
+}
+
+form {
+    margin: 20px;
+}
+
+.content {
+    display: block;
+    padding: 15px;
+}
+
+.content h1 {
+    font-size: 1.7em;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.content p {
+    font-size: .9em;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+
+.content a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.521);
+}
+
+.content a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.campo {
+    width: 100%;
+    display: block;
+    height: 3rem;
+    font-size: 1.2em;
+    margin: 15px 0px;
+}
+
+.campo input {
+    background-color: rgba(55, 55, 189, 0.74);
+    border-radius: 10px;
+    border: none;
+    color: rgb(6, 6, 66);
+    font-size: 0.8em;
+    height: 90%;
+    width: calc(100% - 70px);
+    padding: 10px;
+    transform: translateY(-11px);
+}
+
+.campo input:focus-within {
+    background-color: rgba(0, 0, 139, 0.397);
+    box-shadow: none;
+    outline: none;
+    border: 2px solid rgb(0, 0, 92);
+}
+
+.campo label {
+    display: none;
+}
+
+.campo span {
+    font-size: 1.7em;
+    width: 40px;
+    padding: 5px;
+    color: rgb(2, 2, 85);
+}
+
+form input[type=submit] {
+    width: 100%;
+    height: 35px;
+    background-color: rgba(55, 55, 189, 0.74);
+    border: none;
+    color: rgb(2, 2, 85);
+    font-size: 1.1em;
+    border-radius: 5px;
+    margin: 15px 0px;
+    transition-duration: .2s;
+}
+
+form input[type=submit]:hover {
+    background-color: rgba(43, 43, 148, 0.74);
+    color: rgb(6, 6, 66);
+    cursor: pointer;
+}
+
+form input[type=submit]:active {
+    background-color: rgba(43, 43, 148, 0.74);
+    transform: translateY(3px);
+}
