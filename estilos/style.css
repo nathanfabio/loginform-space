@@ -25,10 +25,10 @@ main {
 }
 
 section {
-    background-color: rgba(43, 43, 139, 0.452);
+    background-color: rgba(43, 43, 139, 0.664);
     border-radius: 10px;
-    height: 25rem;
-    width: 20rem;
+    height: 400px;
+    width: 330px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
 }
 
@@ -77,10 +77,16 @@ form {
     border: none;
     color: rgb(6, 6, 66);
     font-size: 0.8em;
+    font-weight: bold;
     height: 90%;
     width: calc(100% - 70px);
     padding: 10px;
     transform: translateY(-11px);
+}
+
+.campo input::placeholder {
+    font-weight: 100;
+    color: rgb(6, 6, 66);
 }
 
 .campo input:focus-within {
@@ -91,7 +97,6 @@ form {
 }
 
 .campo label {
-    display: none;
 }
 
 .campo span {
@@ -122,4 +127,11 @@ form input[type=submit]:hover {
 form input[type=submit]:active {
     background-color: rgba(43, 43, 148, 0.74);
     transform: translateY(3px);
+}
+
+@media screen and (max-width: 375px) {
+    section {
+        width: 300px;
+        height: 380px;
+    }
 }
